@@ -1,0 +1,1041 @@
+# Collision descriptions
+
+## Overworld
+
+- `$00` — Solid. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$01` — Floor. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$02` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$03` — Dirt. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$04` — Short Grass. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$05` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$06` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$07` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$08` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$09` — Rocky Ground. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$0A` — Tall Grass. Tall-grass movement/effects; cutting is ID-specific. Shovel: no. Physics flag `$06`.
+- `$0B` — Path. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$0C` — Tiles. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$0D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$0E` — Deep water. Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$0F` — Water Bank Bottom. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$10` — Water Bank Top. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$11` — Water Bank Right. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$12` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$13` — Water Bank Corner Tl. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$14` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$15` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$16` — Water Bank Corner Br. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$17` — Water Bank Br. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$18` — Water Bank Bl. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$19` — Water Bank Tr. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$1A` — Water Bank Tl. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$1B` — Shallow Water. Shallow-water movement/effects. Shovel: no. Physics flag `$05`.
+- `$1C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$1D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$1E` — Shallow-water movement/effects. Shovel: no. Physics flag `$05`.
+- `$1F` — Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$20` — Liftable Rock. Removable-obstacle physics; which tool works depends on the object ID. Liftable rock; Power Bracelet interaction. Shovel: no. Physics flag `$30`.
+- `$21` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$22` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$23` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$24` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$25` — Tree Top Left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$26` — Tree Top Right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$27` — Tree Bottom Left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$28` — Tree Bottom Right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$29` — Tree Overlap Left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2A` — Tree Overlap Right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2E` — Cliff Corner Bl. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2F` — Cliff Bottom. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$30` — Shallow-water movement/effects. Shovel: no. Physics flag `$05`.
+- `$31` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$32` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$33` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$34` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$35` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$36` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$37` — Cliff Left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$38` — Cliff Right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$39` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$3A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$3B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$3C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$3D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$3E` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$3F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$40` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$41` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$42` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$43` — Overworld downward-jump ledge. Shovel: no. Physics flag `$10`.
+- `$44` — Animated Flowers. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$45` — Phone Booth Top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$46` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$47` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$48` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$49` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$4A` — Overworld downward-jump ledge. Shovel: no. Physics flag `$10`.
+- `$4B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$4C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$4D` — Cliff Top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$4E` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$4F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$50` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$51` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$52` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$53` — Wide-stair movement handling. Shovel: no. Physics flag `$0A`.
+- `$54` — Keyhole interaction; key, room and progression conditions apply. Shovel: no. Physics flag `$C0`.
+- `$55` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$56` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$57` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$58` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$59` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5C` — Bush. Removable-obstacle physics; which tool works depends on the object ID. Bush; native sword cutting and bracelet removal paths. Shovel: no. Physics flag `$30`.
+- `$5D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5E` — Weather Vane Base. Solid full-cell collision. Weather-vane base; upward A/B interaction opens its text. Shovel: no. Physics flag `$01`.
+- `$5F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$60` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$61` — Well. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$62` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$63` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$64` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$65` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$66` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$67` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$68` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$69` — Hurt Tile. Solid full-cell collision. Cactus/hurt object: hardcoded ID interaction adds damage despite base solid physics. Shovel: no. Physics flag `$01`.
+- `$6A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6E` — Rounded Block. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$6F` — Owl Statue. Solid full-cell collision. Owl statue; upward A/B reading path uses the sign/dialog machinery. Shovel: no. Physics flag `$01`.
+- `$70` — Keyhole interaction; key, room and progression conditions apply. Shovel: no. Physics flag `$C0`.
+- `$71` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$72` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$73` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$74` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$75` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$76` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$77` — Stair movement/transition handling; requires matching room setup. Shovel: no. Physics flag `$02`.
+- `$78` — Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$79` — Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$7A` — Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$7B` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$7C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$7D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$7E` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$7F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$80` — Cliff Corner Tl. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$81` — Cliff Corner Tr. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$82` — Tree Bushes Bottom Left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$83` — Tree Bushes Bottom Right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$84` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$85` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$86` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$87` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$88` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$89` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8E` — Solid full-cell collision. Original corner-tile bug: bracelet code also accepts 8E; reveal routine treats it as a pot-with-switch (AA), causing inappropriate graphics outdoors. Shovel: no. Physics flag `$01`.
+- `$8F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$90` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$91` — Weather Vane Top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$92` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$93` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$94` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$95` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$96` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$97` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$98` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$99` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9E` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A0` — Chest (closed). Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Closed chest: opening/item/event logic is separate from hookshot-anchor physics. Shovel: no. Physics flag `$60`.
+- `$A1` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Open chest: shares base physics with A0 but is a distinct chest state. Shovel: no. Physics flag `$60`.
+- `$A2` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A3` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A4` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$A5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A6` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A7` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A8` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$A9` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AA` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AB` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AC` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AE` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AF` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B0` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B1` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B2` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B3` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$B4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B6` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B7` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B8` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$B9` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$BA` — Bombable Cave Door. Bombable wall/door collision variant 0; bomb passage and room-status handling. Bombable cave opening: native bomb code replaces it with E1 and updates room state. Shovel: no. Physics flag `$99`.
+- `$BB` — Giant Skull Tl. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BC` — Giant Skull Tr. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BD` — Giant Skull Bl. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BE` — Giant Skull Br. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BF` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C0` — Tail Keyhole. Keyhole interaction; key, room and progression conditions apply. Shovel: no. Physics flag `$C0`.
+- `$C1` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C2` — Closed Gate. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C3` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C6` — Ground Stairs. Lowered-ground movement/elevation handling. Shovel: no. Physics flag `$09`.
+- `$C7` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C8` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$C9` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CA` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CB` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$CC` — Shovel Hole. Lowered-ground movement/elevation handling. Shovel: no. Physics flag `$09`.
+- `$CD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CE` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CF` — Diagonal conveyor/current movement variant 4. Shovel: no. Physics flag `$F4`.
+- `$D0` — Diagonal conveyor/current movement variant 5. Shovel: no. Physics flag `$F5`.
+- `$D1` — Diagonal conveyor/current movement variant 6. Shovel: no. Physics flag `$F6`.
+- `$D2` — Diagonal conveyor/current movement variant 7. Shovel: no. Physics flag `$F7`.
+- `$D3` — Bush Ground Stairs. Removable-obstacle physics; which tool works depends on the object ID. Bush covering ground stairs; removal reveals the entrance rather than ordinary ground. Shovel: no. Physics flag `$30`.
+- `$D4` — Signpost. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Signpost; upward A/B reading uses room-specific dialogs and maze logic. Shovel: no. Physics flag `$60`.
+- `$D5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D6` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D7` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D8` — Monkey Bridge Top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D9` — Monkey Bridge Middle. Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$DA` — Monkey Bridge Bottom. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$DB` — Monkey Bridge Built. Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$DC` — Weather Vane Above. Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$DD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$DE` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$DF` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$E0` — Steps. Stair movement/transition handling; requires matching room setup. Shovel: no. Physics flag `$02`.
+- `$E1` — Rocky Cave Door. Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$E2` — House door. Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$E3` — Cave Door. Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$E4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$E5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$E6` — Partial 8×8 collision shape 1; see shape table below. Shovel: no. Physics flag `$81`.
+- `$E7` — Entrance/door handling; requires a valid native warp and room setup. Door flag alone is not a complete standalone entrance; matching placement/warp setup is required. Shovel: no. Physics flag `$03`.
+- `$E8` — Pit. Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$E9` — Waterfall. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$EA` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$EB` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$EC` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$ED` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$EE` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$EF` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$F0` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$F1` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$F2` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$F3` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$F4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$F5` — Tree. Solid full-cell collision. Placement macro: Tree; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$F6` — Two-door house. Solid full-cell collision. Placement macro: Two-door house; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$F7` — Large house. Solid full-cell collision. Placement macro: Large house; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$F8` — Catfish’s Maw entrance. Solid full-cell collision. Placement macro: Catfish’s Maw entrance; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$F9` — Palace entrance. Solid full-cell collision. Placement macro: Palace entrance; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$FA` — Stone pig head. Solid full-cell collision. Placement macro: Stone pig head; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$FB` — Palm tree. Solid full-cell collision. Placement macro: Palm tree; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$FC` — Walled pit. Solid full-cell collision. Placement macro: Walled pit; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$FD` — Small house. Solid full-cell collision. Placement macro: Small house; expands into multiple objects when read from a room stream. Table flag is not the macro’s combined behavior. Shovel: no. Physics flag `$01`.
+- `$FE` — Reserved end-of-room stream marker; not a placeable collision. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$FF` — Reserved/unused placement ID; not a placeable collision. Tractor-device special physics; requires native device/context. Shovel: no. Physics flag `$FF`.
+
+## Dungeon A
+
+- `$00` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$01` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$02` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$03` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$04` — Side view empty. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$05` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$06` — Lava terrain/hazard handling. Shovel: no. Physics flag `$0B`.
+- `$07` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$08` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$09` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$0A` — Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$0B` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$0C` — Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$0D` — Floor od. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$0E` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$0F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$10` — Partial 8×8 collision shape 1; see shape table below. Shovel: no. Physics flag `$81`.
+- `$11` — Partial 8×8 collision shape 0; see shape table below. Shovel: no. Physics flag `$80`.
+- `$12` — Partial 8×8 collision shape 2; see shape table below. Shovel: no. Physics flag `$82`.
+- `$13` — Partial 8×8 collision shape 3; see shape table below. Shovel: no. Physics flag `$83`.
+- `$14` — Partial 8×8 collision shape 4; see shape table below. Shovel: no. Physics flag `$84`.
+- `$15` — Partial 8×8 collision shape 5; see shape table below. Shovel: no. Physics flag `$85`.
+- `$16` — Partial 8×8 collision shape 6; see shape table below. Shovel: no. Physics flag `$86`.
+- `$17` — Partial 8×8 collision shape 7; see shape table below. Shovel: no. Physics flag `$87`.
+- `$18` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$19` — Partial 8×8 collision shape C; see shape table below. Shovel: no. Physics flag `$8C`.
+- `$1A` — Partial 8×8 collision shape D; see shape table below. Shovel: no. Physics flag `$8D`.
+- `$1B` — Shallow-water movement/effects. Shovel: no. Physics flag `$05`.
+- `$1C` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1D` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1E` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1F` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$20` — Liftable pot. Removable-obstacle physics; which tool works depends on the object ID. Liftable pot; bracelet interaction. Shovel: no. Physics flag `$30`.
+- `$21` — Wall top. Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$22` — Wall bottom. Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$23` — Wall left. Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$24` — Wall right. Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$25` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$26` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$27` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$28` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$29` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2D` — Locked-door collision variant 0; Small Key and room-door state handling. Shovel: no. Physics flag `$90`.
+- `$2E` — Locked-door collision variant 0; Small Key and room-door state handling. Shovel: no. Physics flag `$90`.
+- `$2F` — Locked-door collision variant 1; Small Key and room-door state handling. Shovel: no. Physics flag `$91`.
+- `$30` — Locked-door collision variant 1; Small Key and room-door state handling. Shovel: no. Physics flag `$91`.
+- `$31` — Locked-door collision variant 2; Small Key and room-door state handling. Shovel: no. Physics flag `$92`.
+- `$32` — Locked-door collision variant 2; Small Key and room-door state handling. Shovel: no. Physics flag `$92`.
+- `$33` — Locked-door collision variant 3; Small Key and room-door state handling. Shovel: no. Physics flag `$93`.
+- `$34` — Locked-door collision variant 3; Small Key and room-door state handling. Shovel: no. Physics flag `$93`.
+- `$35` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$36` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$37` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$38` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$39` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$3A` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$3B` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$3C` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$3D` — Bombed passage vertical. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$3E` — Bombed passage horizontal. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$3F` — Bombable wall top. Bombable wall/door collision variant 0; bomb passage and room-status handling. Shovel: no. Physics flag `$99`.
+- `$40` — Bombable wall bottom. Bombable wall/door collision variant 1; bomb passage and room-status handling. Shovel: no. Physics flag `$9A`.
+- `$41` — Bombable wall left. Bombable wall/door collision variant 2; bomb passage and room-status handling. Shovel: no. Physics flag `$9B`.
+- `$42` — Bombable wall right. Bombable wall/door collision variant 3; bomb passage and room-status handling. Shovel: no. Physics flag `$9C`.
+- `$43` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$44` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$45` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$46` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$47` — Hidden bombable wall top. Bombable wall/door collision variant 0; bomb passage and room-status handling. Shovel: no. Physics flag `$99`.
+- `$48` — Hidden bombable wall bottom. Bombable wall/door collision variant 1; bomb passage and room-status handling. Shovel: no. Physics flag `$9A`.
+- `$49` — Hidden bombable wall left. Bombable wall/door collision variant 2; bomb passage and room-status handling. Shovel: no. Physics flag `$9B`.
+- `$4A` — Hidden bombable wall right. Bombable wall/door collision variant 3; bomb passage and room-status handling. Shovel: no. Physics flag `$9C`.
+- `$4B` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$4C` — Side view spikes. Walkable/pass-through. Side-view spikes: hazard handling is ID/context-specific despite pass-through table physics. Shovel: no. Physics flag `$00`.
+- `$4D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$4E` — Dashable rock 1. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal piece; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$4F` — Dashable rock 2. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal piece; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$50` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$51` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$52` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$53` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$54` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$55` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$56` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$57` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$58` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$59` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5E` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$60` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$61` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$62` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$63` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$64` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$65` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$66` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$67` — Water ladder sidescroll. Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$68` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$69` — Walkable/pass-through. Named hurt/spike object, but this table entry is pass-through. The 69 contact-damage check is in the solid-collision path; do not infer an always-active indoor hazard from its name. Shovel: no. Physics flag `$00`.
+- `$6A` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6B` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6E` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$70` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$71` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$72` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$73` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$74` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$75` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$76` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$77` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$78` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$79` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7A` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$7C` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7D` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$7E` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$7F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$80` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$81` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$82` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$83` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$84` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$85` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$86` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$87` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$88` — Dashable rock 3. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$89` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$8A` — Frozen block. Solid full-cell collision. Frozen block in side-view context; special projectile/room handling is separate from its solid flag. Shovel: no. Physics flag `$01`.
+- `$8B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8C` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$8D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$8E` — Pot with switch. Removable-obstacle physics; which tool works depends on the object ID. Pot covering a switch; lifting reveals object AA. Shovel: no. Physics flag `$30`.
+- `$8F` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$90` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$91` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$92` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$93` — Partial 8×8 collision shape 8; see shape table below. Shovel: no. Physics flag `$88`.
+- `$94` — Partial 8×8 collision shape 9; see shape table below. Shovel: no. Physics flag `$89`.
+- `$95` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$96` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$97` — Wide-stair movement handling. Shovel: no. Physics flag `$0A`.
+- `$98` — Stair movement/transition handling; requires matching room setup. Shovel: no. Physics flag `$02`.
+- `$99` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9A` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$9B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$9E` — Hookshot bridge pull down. Walkable/pass-through. Hookshot bridge pull-down endpoint; special native bridge handling. Shovel: no. Physics flag `$00`.
+- `$9F` — Hookshot bridge pull up. Walkable/pass-through. Hookshot bridge pull-up endpoint; special native bridge handling. Shovel: no. Physics flag `$00`.
+- `$A0` — Chest closed. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Closed chest; item/event opening logic is separate from its collision class. Shovel: no. Physics flag `$60`.
+- `$A1` — Chest open. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Open chest; distinct chest state. Shovel: no. Physics flag `$60`.
+- `$A2` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A3` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A4` — Boss-door collision; Nightmare Key and native door state handling. Shovel: no. Physics flag `$98`.
+- `$A5` — Boss-door collision; Nightmare Key and native door state handling. Shovel: no. Physics flag `$98`.
+- `$A6` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$A7` — Pushable block. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Pushable block; push/puzzle logic is ID- and room-dependent. Shovel: no. Physics flag `$60`.
+- `$A8` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A9` — Bombable block. Removable-obstacle physics; which tool works depends on the object ID. Bombable block; removable-obstacle behavior is distinct from a pot. Shovel: no. Physics flag `$30`.
+- `$AA` — Switch button. Walkable/pass-through. Floor switch button; event logic is not encoded by pass-through physics. Shovel: no. Physics flag `$00`.
+- `$AB` — Torch unlit. Solid full-cell collision. Unlit torch; lighting/entity logic is separate from the solid flag. Shovel: no. Physics flag `$01`.
+- `$AC` — Torch lit. Solid full-cell collision. Lit torch; separate torch state despite the same solid flag. Shovel: no. Physics flag `$01`.
+- `$AD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AE` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$AF` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$B0` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$B1` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$B2` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$B3` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B4` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B5` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B6` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$B7` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$B8` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$B9` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$BA` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BB` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$BC` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$BD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BE` — Stairs down. Walkable/pass-through. Down-stair object; actual transition depends on room setup despite the pass-through flag. Shovel: no. Physics flag `$00`.
+- `$BF` — Hidden stairs down. Walkable/pass-through. Hidden down stairs; reveal/room conditions are separate from base physics. Shovel: no. Physics flag `$00`.
+- `$C0` — One eyed statue. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C1` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$C2` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$C3` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C6` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C7` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$C8` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$C9` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$CA` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$CB` — Stairs up. Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$CC` — Lowered-ground movement/elevation handling. Shovel: no. Physics flag `$09`.
+- `$CD` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$CE` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CF` — Conveyor bottom. Conveyor movement: down. Shovel: no. Physics flag `$F0`.
+- `$D0` — Conveyor top. Conveyor movement: up. Shovel: no. Physics flag `$F1`.
+- `$D1` — Conveyor right. Conveyor movement: right. Shovel: no. Physics flag `$F2`.
+- `$D2` — Conveyor left. Conveyor movement: left. Shovel: no. Physics flag `$F3`.
+- `$D3` — Trendy game border. Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$D4` — Spikes/hazard physics. Shovel: no. Physics flag `$E0`.
+- `$D5` — Raised fence top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D6` — Raised fence bottom. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D7` — Raised fence left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D8` — Raised fence right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D9` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$DA` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$DB` — Lowered block. Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$DC` — Raised block. Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$DD` — Removable-obstacle physics; which tool works depends on the object ID. Sword-removable crystal/obstacle; native sword path checks indoor ID DD. Shovel: no. Physics flag `$30`.
+- `$DE` — Keyhole block. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$DF` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E0` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E1` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E2` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E3` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E4` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E5` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E6` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E7` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E8` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E9` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$EA` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$EB` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$EC` — Door type key top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$ED` — Door type key bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$EE` — Door type key left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$EF` — Door type key right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F0` — Door type shutter top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F1` — Door type shutter bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F2` — Door type shutter left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F3` — Door type shutter right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F4` — Open door top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F5` — Open door bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F6` — Open door left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F7` — Open door right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F8` — Door type boss top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F9` — Stairs door. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FA` — Flip wall. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FB` — One way arrow. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FC` — Dungeon entrance. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FD` — Indoor entrance. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FE` — Reserved end-of-room stream marker; not a placeable collision. Native unused physics value; not a supported general terrain choice. Shovel: no. Physics flag `$FE`.
+- `$FF` — Reserved/unused placement ID; not a placeable collision. Tractor-device special physics; requires native device/context. Shovel: no. Physics flag `$FF`.
+
+## Dungeon B
+
+- `$00` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$01` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$02` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$03` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$04` — Side view empty. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$05` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$06` — Lava terrain/hazard handling. Shovel: no. Physics flag `$0B`.
+- `$07` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$08` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$09` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$0A` — Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$0B` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$0C` — Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$0D` — Floor od. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$0E` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$0F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$10` — Partial 8×8 collision shape 1; see shape table below. Shovel: no. Physics flag `$81`.
+- `$11` — Partial 8×8 collision shape 0; see shape table below. Shovel: no. Physics flag `$80`.
+- `$12` — Partial 8×8 collision shape 2; see shape table below. Shovel: no. Physics flag `$82`.
+- `$13` — Partial 8×8 collision shape 3; see shape table below. Shovel: no. Physics flag `$83`.
+- `$14` — Partial 8×8 collision shape 4; see shape table below. Shovel: no. Physics flag `$84`.
+- `$15` — Partial 8×8 collision shape 5; see shape table below. Shovel: no. Physics flag `$85`.
+- `$16` — Partial 8×8 collision shape 6; see shape table below. Shovel: no. Physics flag `$86`.
+- `$17` — Partial 8×8 collision shape 7; see shape table below. Shovel: no. Physics flag `$87`.
+- `$18` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$19` — Partial 8×8 collision shape C; see shape table below. Shovel: no. Physics flag `$8C`.
+- `$1A` — Partial 8×8 collision shape D; see shape table below. Shovel: no. Physics flag `$8D`.
+- `$1B` — Shallow-water movement/effects. Shovel: no. Physics flag `$05`.
+- `$1C` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1D` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1E` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1F` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$20` — Liftable pot. Removable-obstacle physics; which tool works depends on the object ID. Liftable pot; bracelet interaction. Shovel: no. Physics flag `$30`.
+- `$21` — Wall top. Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$22` — Wall bottom. Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$23` — Wall left. Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$24` — Wall right. Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$25` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$26` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$27` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$28` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$29` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2D` — Locked-door collision variant 0; Small Key and room-door state handling. Shovel: no. Physics flag `$90`.
+- `$2E` — Locked-door collision variant 0; Small Key and room-door state handling. Shovel: no. Physics flag `$90`.
+- `$2F` — Locked-door collision variant 1; Small Key and room-door state handling. Shovel: no. Physics flag `$91`.
+- `$30` — Locked-door collision variant 1; Small Key and room-door state handling. Shovel: no. Physics flag `$91`.
+- `$31` — Locked-door collision variant 2; Small Key and room-door state handling. Shovel: no. Physics flag `$92`.
+- `$32` — Locked-door collision variant 2; Small Key and room-door state handling. Shovel: no. Physics flag `$92`.
+- `$33` — Locked-door collision variant 3; Small Key and room-door state handling. Shovel: no. Physics flag `$93`.
+- `$34` — Locked-door collision variant 3; Small Key and room-door state handling. Shovel: no. Physics flag `$93`.
+- `$35` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$36` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$37` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$38` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$39` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$3A` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$3B` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$3C` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$3D` — Bombed passage vertical. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$3E` — Bombed passage horizontal. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$3F` — Bombable wall top. Bombable wall/door collision variant 0; bomb passage and room-status handling. Shovel: no. Physics flag `$99`.
+- `$40` — Bombable wall bottom. Bombable wall/door collision variant 1; bomb passage and room-status handling. Shovel: no. Physics flag `$9A`.
+- `$41` — Bombable wall left. Bombable wall/door collision variant 2; bomb passage and room-status handling. Shovel: no. Physics flag `$9B`.
+- `$42` — Bombable wall right. Bombable wall/door collision variant 3; bomb passage and room-status handling. Shovel: no. Physics flag `$9C`.
+- `$43` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$44` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$45` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$46` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$47` — Hidden bombable wall top. Bombable wall/door collision variant 0; bomb passage and room-status handling. Shovel: no. Physics flag `$99`.
+- `$48` — Hidden bombable wall bottom. Bombable wall/door collision variant 1; bomb passage and room-status handling. Shovel: no. Physics flag `$9A`.
+- `$49` — Hidden bombable wall left. Bombable wall/door collision variant 2; bomb passage and room-status handling. Shovel: no. Physics flag `$9B`.
+- `$4A` — Hidden bombable wall right. Bombable wall/door collision variant 3; bomb passage and room-status handling. Shovel: no. Physics flag `$9C`.
+- `$4B` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$4C` — Side view spikes. Walkable/pass-through. Side-view spikes: hazard handling is ID/context-specific despite pass-through table physics. Shovel: no. Physics flag `$00`.
+- `$4D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$4E` — Dashable rock 1. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal piece; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$4F` — Dashable rock 2. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal piece; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$50` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$51` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$52` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$53` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$54` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$55` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$56` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$57` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$58` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$59` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5E` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$5F` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$60` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$61` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$62` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$63` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$64` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$65` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$66` — Side-view ladder; climb handling in side-scrolling rooms. Shovel: no. Physics flag `$B1`.
+- `$67` — Water ladder sidescroll. Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$68` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$69` — Walkable/pass-through. Named hurt/spike object, but this table entry is pass-through. The 69 contact-damage check is in the solid-collision path; do not infer an always-active indoor hazard from its name. Shovel: no. Physics flag `$00`.
+- `$6A` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6B` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6D` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$6E` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$70` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$71` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$72` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$73` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$74` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$75` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$76` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$77` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$78` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$79` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7A` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$7C` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7D` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$7E` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$7F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$80` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$81` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$82` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$83` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$84` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$85` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$86` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$87` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$88` — Dashable rock 3. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$89` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$8A` — Frozen block. Solid full-cell collision. Frozen block in side-view context; special projectile/room handling is separate from its solid flag. Shovel: no. Physics flag `$01`.
+- `$8B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8C` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$8D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$8E` — Pot with switch. Removable-obstacle physics; which tool works depends on the object ID. Pot covering a switch; lifting reveals object AA. Shovel: no. Physics flag `$30`.
+- `$8F` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$90` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$91` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$92` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$93` — Partial 8×8 collision shape 8; see shape table below. Shovel: no. Physics flag `$88`.
+- `$94` — Partial 8×8 collision shape 9; see shape table below. Shovel: no. Physics flag `$89`.
+- `$95` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$96` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$97` — Wide-stair movement handling. Shovel: no. Physics flag `$0A`.
+- `$98` — Stair movement/transition handling; requires matching room setup. Shovel: no. Physics flag `$02`.
+- `$99` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9A` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$9B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$9E` — Hookshot bridge pull down. Walkable/pass-through. Hookshot bridge pull-down endpoint; special native bridge handling. Shovel: no. Physics flag `$00`.
+- `$9F` — Hookshot bridge pull up. Walkable/pass-through. Hookshot bridge pull-up endpoint; special native bridge handling. Shovel: no. Physics flag `$00`.
+- `$A0` — Chest closed. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Closed chest; item/event opening logic is separate from its collision class. Shovel: no. Physics flag `$60`.
+- `$A1` — Chest open. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Open chest; distinct chest state. Shovel: no. Physics flag `$60`.
+- `$A2` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A3` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A4` — Boss-door collision; Nightmare Key and native door state handling. Shovel: no. Physics flag `$98`.
+- `$A5` — Boss-door collision; Nightmare Key and native door state handling. Shovel: no. Physics flag `$98`.
+- `$A6` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$A7` — Pushable block. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Pushable block; push/puzzle logic is ID- and room-dependent. Shovel: no. Physics flag `$60`.
+- `$A8` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A9` — Bombable block. Removable-obstacle physics; which tool works depends on the object ID. Bombable block; removable-obstacle behavior is distinct from a pot. Shovel: no. Physics flag `$30`.
+- `$AA` — Switch button. Walkable/pass-through. Floor switch button; event logic is not encoded by pass-through physics. Shovel: no. Physics flag `$00`.
+- `$AB` — Torch unlit. Solid full-cell collision. Unlit torch; lighting/entity logic is separate from the solid flag. Shovel: no. Physics flag `$01`.
+- `$AC` — Torch lit. Solid full-cell collision. Lit torch; separate torch state despite the same solid flag. Shovel: no. Physics flag `$01`.
+- `$AD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AE` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$AF` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$B0` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$B1` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$B2` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$B3` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B4` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B5` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B6` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$B7` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$B8` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$B9` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$BA` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BB` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$BC` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$BD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BE` — Stairs down. Walkable/pass-through. Down-stair object; actual transition depends on room setup despite the pass-through flag. Shovel: no. Physics flag `$00`.
+- `$BF` — Hidden stairs down. Walkable/pass-through. Hidden down stairs; reveal/room conditions are separate from base physics. Shovel: no. Physics flag `$00`.
+- `$C0` — One eyed statue. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C1` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$C2` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$C3` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C6` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C7` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$C8` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$C9` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$CA` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$CB` — Stairs up. Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$CC` — Lowered-ground movement/elevation handling. Shovel: no. Physics flag `$09`.
+- `$CD` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$CE` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CF` — Conveyor bottom. Conveyor movement: down. Shovel: no. Physics flag `$F0`.
+- `$D0` — Conveyor top. Conveyor movement: up. Shovel: no. Physics flag `$F1`.
+- `$D1` — Conveyor right. Conveyor movement: right. Shovel: no. Physics flag `$F2`.
+- `$D2` — Conveyor left. Conveyor movement: left. Shovel: no. Physics flag `$F3`.
+- `$D3` — Trendy game border. Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$D4` — Spikes/hazard physics. Shovel: no. Physics flag `$E0`.
+- `$D5` — Raised fence top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D6` — Raised fence bottom. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D7` — Raised fence left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D8` — Raised fence right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D9` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$DA` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$DB` — Lowered block. Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$DC` — Raised block. Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$DD` — Removable-obstacle physics; which tool works depends on the object ID. Sword-removable crystal/obstacle; native sword path checks indoor ID DD. Shovel: no. Physics flag `$30`.
+- `$DE` — Keyhole block. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$DF` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E0` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E1` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E2` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E3` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E4` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E5` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E6` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E7` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E8` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E9` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$EA` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$EB` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$EC` — Door type key top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$ED` — Door type key bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$EE` — Door type key left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$EF` — Door type key right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F0` — Door type shutter top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F1` — Door type shutter bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F2` — Door type shutter left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F3` — Door type shutter right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F4` — Open door top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F5` — Open door bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F6` — Open door left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F7` — Open door right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F8` — Door type boss top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F9` — Stairs door. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FA` — Flip wall. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FB` — One way arrow. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FC` — Dungeon entrance. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FD` — Indoor entrance. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FE` — Reserved end-of-room stream marker; not a placeable collision. Native unused physics value; not a supported general terrain choice. Shovel: no. Physics flag `$FE`.
+- `$FF` — Reserved/unused placement ID; not a placeable collision. Tractor-device special physics; requires native device/context. Shovel: no. Physics flag `$FF`.
+
+## Color Dungeon
+
+- `$00` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$01` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$02` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$03` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$04` — Side view empty. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$05` — Walkable/pass-through. Shovel: yes. Physics flag `$00`.
+- `$06` — Lava terrain/hazard handling. Shovel: no. Physics flag `$0B`.
+- `$07` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$08` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$09` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$0A` — Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$0B` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$0C` — Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$0D` — Floor od. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$0E` — Deep water; swimming/Flippers and drowning rules apply. Shovel: no. Physics flag `$07`.
+- `$0F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$10` — Partial 8×8 collision shape 1; see shape table below. Shovel: no. Physics flag `$81`.
+- `$11` — Partial 8×8 collision shape 0; see shape table below. Shovel: no. Physics flag `$80`.
+- `$12` — Partial 8×8 collision shape 2; see shape table below. Shovel: no. Physics flag `$82`.
+- `$13` — Partial 8×8 collision shape 3; see shape table below. Shovel: no. Physics flag `$83`.
+- `$14` — Partial 8×8 collision shape 4; see shape table below. Shovel: no. Physics flag `$84`.
+- `$15` — Partial 8×8 collision shape 5; see shape table below. Shovel: no. Physics flag `$85`.
+- `$16` — Partial 8×8 collision shape 6; see shape table below. Shovel: no. Physics flag `$86`.
+- `$17` — Partial 8×8 collision shape 7; see shape table below. Shovel: no. Physics flag `$87`.
+- `$18` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$19` — Partial 8×8 collision shape C; see shape table below. Shovel: no. Physics flag `$8C`.
+- `$1A` — Partial 8×8 collision shape D; see shape table below. Shovel: no. Physics flag `$8D`.
+- `$1B` — Shallow-water movement/effects. Shovel: no. Physics flag `$05`.
+- `$1C` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1D` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1E` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$1F` — Warp pit; falling also uses room/warp setup. Shovel: no. Physics flag `$51`.
+- `$20` — Liftable pot. Removable-obstacle physics; which tool works depends on the object ID. Liftable pot; bracelet interaction. Shovel: no. Physics flag `$30`.
+- `$21` — Wall top. Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$22` — Wall bottom. Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$23` — Wall left. Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$24` — Wall right. Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$25` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$26` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$27` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$28` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$29` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2A` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$2D` — Locked-door collision variant 0; Small Key and room-door state handling. Shovel: no. Physics flag `$90`.
+- `$2E` — Locked-door collision variant 0; Small Key and room-door state handling. Shovel: no. Physics flag `$90`.
+- `$2F` — Locked-door collision variant 1; Small Key and room-door state handling. Shovel: no. Physics flag `$91`.
+- `$30` — Locked-door collision variant 1; Small Key and room-door state handling. Shovel: no. Physics flag `$91`.
+- `$31` — Locked-door collision variant 2; Small Key and room-door state handling. Shovel: no. Physics flag `$92`.
+- `$32` — Locked-door collision variant 2; Small Key and room-door state handling. Shovel: no. Physics flag `$92`.
+- `$33` — Locked-door collision variant 3; Small Key and room-door state handling. Shovel: no. Physics flag `$93`.
+- `$34` — Locked-door collision variant 3; Small Key and room-door state handling. Shovel: no. Physics flag `$93`.
+- `$35` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$36` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$37` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$38` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$39` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$3A` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$3B` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$3C` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$3D` — Bombed passage vertical. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$3E` — Bombed passage horizontal. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$3F` — Bombable wall top. Bombable wall/door collision variant 0; bomb passage and room-status handling. Shovel: no. Physics flag `$99`.
+- `$40` — Bombable wall bottom. Bombable wall/door collision variant 1; bomb passage and room-status handling. Shovel: no. Physics flag `$9A`.
+- `$41` — Bombable wall left. Bombable wall/door collision variant 2; bomb passage and room-status handling. Shovel: no. Physics flag `$9B`.
+- `$42` — Bombable wall right. Bombable wall/door collision variant 3; bomb passage and room-status handling. Shovel: no. Physics flag `$9C`.
+- `$43` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$44` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$45` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$46` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$47` — Hidden bombable wall top. Bombable wall/door collision variant 0; bomb passage and room-status handling. Shovel: no. Physics flag `$99`.
+- `$48` — Hidden bombable wall bottom. Bombable wall/door collision variant 1; bomb passage and room-status handling. Shovel: no. Physics flag `$9A`.
+- `$49` — Hidden bombable wall left. Bombable wall/door collision variant 2; bomb passage and room-status handling. Shovel: no. Physics flag `$9B`.
+- `$4A` — Hidden bombable wall right. Bombable wall/door collision variant 3; bomb passage and room-status handling. Shovel: no. Physics flag `$9C`.
+- `$4B` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$4C` — Side view spikes. Walkable/pass-through. Side-view spikes: hazard handling is ID/context-specific despite pass-through table physics. Shovel: no. Physics flag `$00`.
+- `$4D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$4E` — Dashable rock 1. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal piece; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$4F` — Dashable rock 2. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal piece; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$50` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$51` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$52` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$53` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$54` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$55` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$56` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$57` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$58` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$59` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$5A` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$5B` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$5C` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$5D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$5E` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$5F` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$60` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$61` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$62` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$63` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$64` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$65` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$66` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$67` — Water ladder sidescroll. Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$68` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$69` — Walkable/pass-through. Named hurt/spike object, but this table entry is pass-through. The 69 contact-damage check is in the solid-collision path; do not infer an always-active indoor hazard from its name. Shovel: no. Physics flag `$00`.
+- `$6A` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6B` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6C` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6E` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$6F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$70` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$71` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$72` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$73` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$74` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$75` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$76` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$77` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$78` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$79` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7A` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$7C` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$7D` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$7E` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$7F` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$80` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$81` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$82` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$83` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$84` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$85` — Side-view water; uses side-scrolling movement rules. Shovel: no. Physics flag `$B0`.
+- `$86` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$87` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$88` — Dashable rock 3. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Dashable rock/crystal; also a hookshot anchor. Shovel: no. Physics flag `$60`.
+- `$89` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$8A` — Frozen block. Solid full-cell collision. Frozen block in side-view context; special projectile/room handling is separate from its solid flag. Shovel: no. Physics flag `$01`.
+- `$8B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$8C` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$8D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$8E` — Pot with switch. Removable-obstacle physics; which tool works depends on the object ID. Pot covering a switch; lifting reveals object AA. Shovel: no. Physics flag `$30`.
+- `$8F` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$90` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$91` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$92` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$93` — Partial 8×8 collision shape 8; see shape table below. Shovel: no. Physics flag `$88`.
+- `$94` — Partial 8×8 collision shape 9; see shape table below. Shovel: no. Physics flag `$89`.
+- `$95` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$96` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$97` — Wide-stair movement handling. Shovel: no. Physics flag `$0A`.
+- `$98` — Stair movement/transition handling; requires matching room setup. Shovel: no. Physics flag `$02`.
+- `$99` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9A` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$9B` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9C` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$9D` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$9E` — Hookshot bridge pull down. Walkable/pass-through. Hookshot bridge pull-down endpoint; special native bridge handling. Shovel: no. Physics flag `$00`.
+- `$9F` — Hookshot bridge pull up. Walkable/pass-through. Hookshot bridge pull-up endpoint; special native bridge handling. Shovel: no. Physics flag `$00`.
+- `$A0` — Chest closed. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Closed chest; item/event opening logic is separate from its collision class. Shovel: no. Physics flag `$60`.
+- `$A1` — Chest open. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Open chest; distinct chest state. Shovel: no. Physics flag `$60`.
+- `$A2` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A3` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A4` — Boss-door collision; Nightmare Key and native door state handling. Shovel: no. Physics flag `$98`.
+- `$A5` — Boss-door collision; Nightmare Key and native door state handling. Shovel: no. Physics flag `$98`.
+- `$A6` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$A7` — Pushable block. Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Pushable block; push/puzzle logic is ID- and room-dependent. Shovel: no. Physics flag `$60`.
+- `$A8` — Entrance/door handling; requires a valid native warp and room setup. Shovel: no. Physics flag `$03`.
+- `$A9` — Bombable block. Removable-obstacle physics; which tool works depends on the object ID. Bombable block; removable-obstacle behavior is distinct from a pot. Shovel: no. Physics flag `$30`.
+- `$AA` — Switch button. Walkable/pass-through. Floor switch button; event logic is not encoded by pass-through physics. Shovel: no. Physics flag `$00`.
+- `$AB` — Torch unlit. Solid full-cell collision. Unlit torch; lighting/entity logic is separate from the solid flag. Shovel: no. Physics flag `$01`.
+- `$AC` — Torch lit. Solid full-cell collision. Lit torch; separate torch state despite the same solid flag. Shovel: no. Physics flag `$01`.
+- `$AD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$AE` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$AF` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$B0` — Pit; slips/falls into the hole. Shovel: no. Physics flag `$50`.
+- `$B1` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$B2` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$B3` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B4` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B5` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$B6` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$B7` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$B8` — Partial 8×8 collision shape B; see shape table below. Shovel: no. Physics flag `$8B`.
+- `$B9` — Partial 8×8 collision shape A; see shape table below. Shovel: no. Physics flag `$8A`.
+- `$BA` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BB` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$BC` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$BD` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$BE` — Stairs down. Walkable/pass-through. Down-stair object; actual transition depends on room setup despite the pass-through flag. Shovel: no. Physics flag `$00`.
+- `$BF` — Hidden stairs down. Walkable/pass-through. Hidden down stairs; reveal/room conditions are separate from base physics. Shovel: no. Physics flag `$00`.
+- `$C0` — One eyed statue. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C1` — Open/flip-door collision variant 7C; directional partial collision and doorway handling. Shovel: no. Physics flag `$7C`.
+- `$C2` — Open/flip-door collision variant 7D; directional partial collision and doorway handling. Shovel: no. Physics flag `$7D`.
+- `$C3` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C4` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C5` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C6` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$C7` — Directional jump ledge: down. Shovel: no. Physics flag `$D3`.
+- `$C8` — Directional jump ledge: up. Shovel: no. Physics flag `$D2`.
+- `$C9` — Directional jump ledge: right. Shovel: no. Physics flag `$D0`.
+- `$CA` — Directional jump ledge: left. Shovel: no. Physics flag `$D1`.
+- `$CB` — Stairs up. Raised-ground movement/elevation handling. Shovel: no. Physics flag `$08`.
+- `$CC` — Lowered-ground movement/elevation handling. Shovel: no. Physics flag `$09`.
+- `$CD` — Open/flip-door collision variant 7E; directional partial collision and doorway handling. Shovel: no. Physics flag `$7E`.
+- `$CE` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$CF` — Conveyor bottom. Conveyor movement: down. Shovel: no. Physics flag `$F0`.
+- `$D0` — Conveyor top. Conveyor movement: up. Shovel: no. Physics flag `$F1`.
+- `$D1` — Conveyor right. Conveyor movement: right. Shovel: no. Physics flag `$F2`.
+- `$D2` — Conveyor left. Conveyor movement: left. Shovel: no. Physics flag `$F3`.
+- `$D3` — Trendy game border. Open/flip-door collision variant 7F; directional partial collision and doorway handling. Shovel: no. Physics flag `$7F`.
+- `$D4` — Spikes/hazard physics. Shovel: no. Physics flag `$E0`.
+- `$D5` — Raised fence top. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D6` — Raised fence bottom. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D7` — Raised fence left. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D8` — Raised fence right. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$D9` — Hookshot-anchor/obstacle physics; dashability and interaction depend on ID. Shovel: no. Physics flag `$60`.
+- `$DA` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$DB` — Lowered block. Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$DC` — Raised block. Ocean/switch-block physics; context-dependent, not generic floor. Shovel: no. Physics flag `$04`.
+- `$DD` — Removable-obstacle physics; which tool works depends on the object ID. Sword-removable crystal/obstacle; native sword path checks indoor ID DD. Shovel: no. Physics flag `$30`.
+- `$DE` — Keyhole block. Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$DF` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E0` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E1` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E2` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E3` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E4` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E5` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E6` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E7` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E8` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$E9` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$EA` — Walkable/pass-through. Shovel: no. Physics flag `$00`.
+- `$EB` — Solid full-cell collision. Shovel: no. Physics flag `$01`.
+- `$EC` — Door type key top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$ED` — Door type key bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$EE` — Door type key left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$EF` — Door type key right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F0` — Door type shutter top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F1` — Door type shutter bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F2` — Door type shutter left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F3` — Door type shutter right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F4` — Open door top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F5` — Open door bottom. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F6` — Open door left. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F7` — Open door right. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F8` — Door type boss top. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$F9` — Stairs door. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FA` — Flip wall. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FB` — One way arrow. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FC` — Dungeon entrance. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FD` — Indoor entrance. Room-stream door/entrance preset; expands into native cells. Solid full-cell collision. Door/entrance placement command: room loader expands this into actual door/wall objects; its solid table entry is not the resulting door physics. Shovel: no. Physics flag `$01`.
+- `$FE` — Reserved end-of-room stream marker; not a placeable collision. Native unused physics value; not a supported general terrain choice. Shovel: no. Physics flag `$FE`.
+- `$FF` — Reserved/unused placement ID; not a placeable collision. Tractor-device special physics; requires native device/context. Shovel: no. Physics flag `$FF`.
+
+## Sources and scope
+
+Verified against the local disassembly: `src/data/objects/physics.asm`, `src/constants/physics.asm`, `src/constants/gfx.asm`, `GetObjectPhysicsFlags` in `src/code/bank0.asm` (00:2A12), and the shovel target check in `src/code/bank2.asm` (02:4D20). All 768 underlying physics-table bytes were checked against the native Rev2 ROM. ID-specific notes follow the API’s `Native_Collision_Reference.md`; this is a reference, not an exhaustive audit of every entity and event handler.
